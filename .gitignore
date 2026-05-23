@@ -1,0 +1,34 @@
+# Operational runtime artefacts — produced on the Mac mini, never committed.
+# These are the per-peel and per-cycle outputs the driver creates and deletes.
+raw/
+staging/
+tiles/
+duckdb-tmp/
+driver-state/
+logs/
+.tile-staging/
+
+# Bash heredoc / temp body files used for PR creation
+_pr_body.md
+_body.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+*.egg-info/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# DuckDB transient files (when temp_directory falls back to cwd)
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
