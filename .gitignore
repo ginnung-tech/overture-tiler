@@ -8,6 +8,13 @@ driver-state/
 logs/
 .tile-staging/
 
+# Secrets. The recommended home is ~/.config/overture-tiler/env (outside the
+# repo); the ignore here is belt-and-suspenders for accidental drops.
+.env
+.env.local
+.env.*.local
+*.env
+
 # Bash heredoc / temp body files used for PR creation
 _pr_body.md
 _body.md
